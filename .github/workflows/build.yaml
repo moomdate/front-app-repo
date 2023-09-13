@@ -14,6 +14,13 @@ jobs:
 
       - name: Check Node v
         run: node -v
+      
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          
+      - name: Check Node v
+        run: node -v
 
       - name: Build front
         run: |
